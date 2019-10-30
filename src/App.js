@@ -1,25 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TilmeldButik from "./TilmeldButik/TilmeldButik";
+import RedigerButik from "./RedigerButik/ButikAdmin";
+import OpretBruger from "./OpretBruger/OpretKonto";
+import RedigerBruger from "./RedigerBruger/BrugerAdmin";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import {BrowserRouter, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Route path="/tilmeldbutik" component={TilmeldButik}/>  
+      <Route path="/redigerbutik/:id" component={RedigerButik}/>  
+      <Route path="/opretbruger" component={OpretBruger}/>   
+      <Route path="/redigerbruger/:id" component={RedigerBruger}/>  
+    </BrowserRouter>
   );
 }
 
