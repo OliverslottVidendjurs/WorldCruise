@@ -5,6 +5,7 @@ import TilmeldButik from "./TilmeldButik/TilmeldButik";
 import RedigerButik from "./RedigerButik/ButikAdmin";
 import OpretBruger from "./OpretBruger/OpretKonto";
 import RedigerBruger from "./RedigerBruger/BrugerAdmin";
+import BrugerLogin from "./Login/BrugerLogin";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import {BrowserRouter, Route} from "react-router-dom";
 
@@ -14,7 +15,8 @@ function App() {
       <Route path="/tilmeldbutik" component={TilmeldButik}/>  
       <Route path="/redigerbutik/:id" component={RedigerButik}/>  
       <Route path="/opretbruger" component={OpretBruger}/>   
-      <Route path="/redigerbruger/:id" component={RedigerBruger}/>  
+      <Route path="/redigerbruger/:id" component={RedigerBruger}/>
+      <Route path="/login" component={BrugerLogin}/>  
     </BrowserRouter>
   );
 }

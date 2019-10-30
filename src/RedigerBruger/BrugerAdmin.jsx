@@ -41,10 +41,11 @@ const BrugerAdmin = () => {
     function OverfoerPenge(e){
         e.preventDefault();
         let input = document.querySelector("#inputOverfør");
+        let newAmount = parseInt(input.value) + parseInt(belob); 
         Axios.post(`https://worldcruiseapi.azurewebsites.net/bruger/edit/${id}`, {
-            Penge: input.value
+            Penge: newAmount
         }).then(response => {
-            setBelob(input.value);
+            setBelob(newAmount);
             input.value = "";
             alert("overført!");
         });
@@ -98,7 +99,7 @@ const BrugerAdmin = () => {
 
             </form>
             <div className="mb-5">
-                <h4>Konto balance: <span class="kontoBalance">-{belob} kr.</span></h4>
+                <h4>Konto balance: <span class="kontoBalance">{belob} kr.</span></h4>
             </div>
             <h5>Butikker du har handlet i:</h5>
             <table className="mb-5">
