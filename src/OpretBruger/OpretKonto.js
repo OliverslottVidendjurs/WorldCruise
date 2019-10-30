@@ -69,7 +69,7 @@ const OpretKonto = () => {
                 </Form.Group>
 
                 <Form.Group className="d-flex justify-content-md-center" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" required/>
+                    
                     <Form.Check className="pl-5" type="checkbox" required/>
                     <p>Accept our</p> <a className="pl-1" href="#">conditions</a>
                 </Form.Group>
