@@ -2,9 +2,11 @@
     z-index: 10000;
 }
 #navigation{
-    
+    background-color: #d3dbe2;
+    padding: 10px;
     .logo{
-        width: 100px;
+        width: 80px;
+        
     }
     .burger{
         width: 100px;
@@ -29,7 +31,8 @@ a:hover
 {
   display: block;
   position: relative;
-  top: 50px;
+  top: 30px;
+  right: 15px;
   
   z-index: 1;
   
@@ -40,7 +43,7 @@ a:hover
 #menuToggle input.burger
 {
   display: block;
-  width: 40px;
+  width: 63px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -65,7 +68,7 @@ a:hover
   margin-bottom: 5px;
   position: relative;
   
-  background: #ffffff;
+  background: #204070;
   border-radius: 3px;
   
   z-index: 1;

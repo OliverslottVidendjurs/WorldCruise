@@ -1,0 +1,44 @@
+.ButikContainer {
+    min-width: 60%;
+    font-size: 1.5em;
+
+
+}
+
+.container {
+    background-color: #E8E9EA;
+    min-height: 90vh;
+    -webkit-box-shadow: 7px 7px 12px -3px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 7px 7px 12px -3px rgba(0, 0, 0, 0.43);
+    box-shadow: 7px 7px 12px -3px rgba(0, 0, 0, 0.43);
+}
+#first p {
+    text-align: left;
+    padding: 0.4em;
+}
+
+.ButikContainer img {
+    width: 100%;
+}
+#second{
+    /* background-color: blanchedalmond; */
+}
+
+
+@media only screen and (max-width: 987px) {
+	#first {
+        order: 2;
+        padding-left: 15px!important;
+        padding-top: 25px!important;
+    }
+    #first p{
+        padding-left: 0px!important;
+    }
+	#second {
+		order: 1;
+    }
+    /* .container {
+        background-color: rgb(48, 105, 161);
+        
+    } */
+}

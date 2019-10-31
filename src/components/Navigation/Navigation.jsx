@@ -23,11 +23,11 @@ const Navigation = () => {
 
                     <ul id="menu">
                         <Link to="/"><li>Forside</li></Link>
-                        <a href="#"><li>Nyheder</li></a>
-                        <a href="#"><li>Kundeservice</li></a>
-                        <a href="#"><li>Firmaprofil</li></a>
-                        <a href="#"><li>Opret konto</li></a>
-                        <a href="#"><li>Tilmeld butik</li></a>
+                        <Link to="/nyheder"><li>Nyheder</li></Link>
+                        <Link to="/kundeservice"><li>Kundeservice</li></Link>
+                        <Link to="/firmaprofil"><li>Firmaprofil</li></Link>
+                        <Link to="/opretbruger"><li>Opret konto</li></Link>
+                        <Link to="/tilmeldbutik"><li>Tilmeld butik</li></Link>
                         <form action="">
                             <input type="text" />
                             <button type="submit">Search</button>
@@ -41,6 +41,24 @@ const Navigation = () => {
                 </div>
             </nav>
             <div className="modal fade" id="BrugerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Bruger Login</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <BrugerLogin />
+                                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#ButikModal">
+                                Butik Login
+                            </button>                            <button type="button" className="btn btn-primary">Login Admin</button>
+                        </div>
+                    </div>
+                </div>
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
