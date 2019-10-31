@@ -1,0 +1,85 @@
+/*Butik og informations bokse om butikkerne*/
+
+
+.Butik-container {
+    position: relative;
+}
+
+.ButikInfo-Container {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; bottom: 110px;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #494949;
+    background-color: rgb(255, 255, 255);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    visibility: hidden;
+    opacity: 0;
+    
+
+}
+
+.ButikInfo-Container:after {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-top: 0px solid #494949;
+      border-right: 1px solid #494949;
+      border-bottom: 1px solid #494949;
+      border-left: 0px solid #494949;
+      top:100%;
+      left: 50%;
+      margin-left: -25px;
+      content: '';
+      transform: rotate(45deg);
+      margin-top: -25px;
+      background-color: rgb(255, 255, 255);
+    }
+
+
+
+.Butik-container:hover .ButikInfo-Container {
+    transition: 0.4s;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.Butikker-Logo {
+    width: 260px;
+    margin: 0px 20px 0px 20px;;
+    border: none;
+    opacity: 0.2;
+    
+}
+
+.Butikker-Logo:hover {
+    transition: 0.4s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ButikInfo-Container-header {
+    font-family: ‘Muli’, sans-serif !important;
+}
+
+.ButikInfo-Container-article {
+    width: 95%;
+    font-family: ‘Varela Round’, sans-serif !important;
+
+}
+
+@media screen and (max-width: 1540px) {
+    .Butik-container:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .Butik-container:nth-last-child(2) {
+        display: none;
+    }
+}

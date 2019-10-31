@@ -1,0 +1,46 @@
+/**** NewsMain CSS ****/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Muli|Varela+Round&display=swap');
+
+.NyhedMain h3, h2{
+  font-family: 'Varela Round', sans-serif;
+}
+
+.NyhedMain p{
+  font-family: 'Muli', sans-serif;
+}
+
+.NyhedMain h2 {
+    color: #19374f;
+  }
+
+/* NyhedMain */
+
+.NyhedMain .overlay-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.NyhedMain .black-box {
+  margin: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.NyhedMain .overlay-logo {
+  width: 40%;
+}
+
+.NyhedMain .btn-main-news {
+  border: solid white 2px;
+  border-radius: 5px;
+  padding: 4px 10px;
+  background-color: rgba(22, 43, 74, 0.7);
+  color: white;
+}
+

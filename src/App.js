@@ -14,6 +14,7 @@ import Home from './components/Home';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Kundeservice from './components/Kundeservice';
+import Posts from "./components/News/Posts";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Navigation />
       <Route exact path="/" component={Home} />
       <Route path="/kundeservice" component={Kundeservice} />
+      <Route path="/nyheder" component={Posts} />
       <Route path="/tilmeldbutik" component={TilmeldButik} />
       <Route path="/redigerbutik/:id" component={RedigerButik} />
       <Route path="/opretbruger" component={OpretBruger} />

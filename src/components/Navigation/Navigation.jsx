@@ -13,6 +13,11 @@ const Navigation = () => {
         bruger.style.display = "none"
         butik.style.display = "block"
     }
+    // let li = document.querySelector("li");
+    // li.addEventListener("click", function(){
+    //     document.querySelector("#menuToggle ul").style.transform = "translate(50%, 0)";
+
+    // });
     return (
         <div className="position-fixed w-100 zindex">
             <nav role="navigation" id="navigation" className="row position-relative">
