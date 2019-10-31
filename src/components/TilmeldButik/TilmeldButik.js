@@ -22,7 +22,8 @@ const TilmeldButik = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="needs-validation" novalidate>
+        <div className="pad container text-dark">
+            <form onSubmit={handleSubmit} className="needs-validation" novalidate>
             <div className="form-row">
                 <div className="col-md-12 mb-3">
                     <label for="validationTooltip01">Butiksnavn</label>
@@ -53,71 +54,8 @@ const TilmeldButik = () => {
             </div>
             <button className="btn btn-primary" type="submit">Tilmeld Butilken</button>
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* <form>
-        <div className="form-group row">
-            <label for="colFormLabelLg" className="col-sm-2 col-form-label col-form-label-lg">Email</label>
-            <div className="col-sm-10">
-                <input type="email" className="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg" />
-            </div>
         </div>
-
-        <div className="form-group row">
-            <label for="colFormLabelLg" className="col-sm-2 col-form-label col-form-label-lg">Email</label>
-            <div className="col-sm-10">
-                <input type="email" className="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg" />
-            </div>
-        </div>
-
-        <div className="form-group row">
-            <label for="colFormLabelLg" className="col-sm-2 col-form-label col-form-label-lg">Email</label>
-            <div className="col-sm-10">
-                <input type="email" className="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg" />
-            </div>
-        </div>
-
-        <div className="form-group row">
-            <label for="colFormLabelLg" className="col-sm-2 col-form-label col-form-label-lg">Email</label>
-            <div className="col-sm-10">
-                <input type="email" className="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg" />
-            </div>
-        </div> */
-
-
-
-
-
-
-
-
-        /* </form > */
-
+        
     )
 }
 

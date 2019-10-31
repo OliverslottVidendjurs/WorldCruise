@@ -1,0 +1,9 @@
+.GoogleMapsContainer {
+    height: auto;
+    border: none;
+}
+
+.GoogleMapsContainer iframe {
+    max-height: 800px;
+    border: none;
+}

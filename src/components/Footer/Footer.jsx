@@ -21,20 +21,20 @@ const Footer = () => {
                 <div className="col-lg-3 col-md-12">
                     <h3>Kontakt</h3>
                     <ul>
-                   <li> <i class="fas fa-map-marker-alt"></i>email@email.com</li>
-                   <li> <i class="fas fa-envelope"></i>email@email.com</li>
-                    <li><i class="fas fa-phone-alt"></i>email@email.com</li>
+                   <li> <i className="fas fa-map-marker-alt"></i>email@email.com</li>
+                   <li> <i className="fas fa-envelope"></i>email@email.com</li>
+                    <li><i className="fas fa-phone-alt"></i>email@email.com</li>
                     </ul>
                 </div>
                 <div className="col-lg-3 col-md-12" id="icons">
                     <h3>Følg os</h3>
                     <div className="col-12">
-                    <a href="facebook.com"><img src="" alt=""/><i class="fab fa-facebook"></i></a>
-                    <a href="facebook.com"><img src="" alt=""/><i class="fab fa-instagram"></i></a>
+                    <a href="facebook.com"><img src="" alt=""/><i className="fab fa-facebook"></i></a>
+                    <a href="facebook.com"><img src="" alt=""/><i className="fab fa-instagram"></i></a>
                     </div>
                     <div className="col-12">
-                    <a href="facebook.com"><img src="" alt=""/><i class="fab fa-twitter"></i></a>
-                    <a href="facebook.com"><img src="" alt=""/><i class="fab fa-youtube"></i></a>
+                    <a href="facebook.com"><img src="" alt=""/><i className="fab fa-twitter"></i></a>
+                    <a href="facebook.com"><img src="" alt=""/><i className="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>

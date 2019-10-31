@@ -13,7 +13,9 @@
     }
 }
 
-
+.modalButik{
+  display: none;
+}
 a
 {
   text-decoration: none;
@@ -149,9 +151,7 @@ a:hover
   color: #ffffff;
 }
 
-/*
- * And let's slide it in from the left
- */
+
 #menuToggle input:checked ~ ul
 {
   transform: translate(-50%, 0);
