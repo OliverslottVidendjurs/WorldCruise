@@ -1,0 +1,15 @@
+#header {
+    background-image: url("/img/skib1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vw;
+    display: block;
+    width: 100%;
+    position: relative;
+    div.bg-gray{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

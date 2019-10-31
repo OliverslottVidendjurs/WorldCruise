@@ -1,17 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TilmeldButik from "./TilmeldButik/TilmeldButik";
-import RedigerButik from "./RedigerButik/ButikAdmin";
-import OpretBruger from "./OpretBruger/OpretKonto";
-import RedigerBruger from "./RedigerBruger/BrugerAdmin";
-import BrugerLogin from "./Login/BrugerLogin";
+import TilmeldButik from "./components/TilmeldButik/TilmeldButik";
+import RedigerButik from "./components/RedigerButik/ButikAdmin";
+import OpretBruger from "./components/OpretBruger/OpretKonto";
+import RedigerBruger from "./components/RedigerBruger/BrugerAdmin";
+import BrugerLogin from "./components/Login/BrugerLogin";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.js";
 import {BrowserRouter, Route} from "react-router-dom";
+import Home from './components/Home';
 
 function App() {
   return (
     <BrowserRouter>
+      <Route exact path="/" component={Home}/>  
       <Route path="/tilmeldbutik" component={TilmeldButik}/>  
       <Route path="/redigerbutik/:id" component={RedigerButik}/>  
       <Route path="/opretbruger" component={OpretBruger}/>   
