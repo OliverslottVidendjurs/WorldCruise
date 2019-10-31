@@ -7,6 +7,12 @@ import "./Navigation.scss";
 import BrugerLogin from '../Login/BrugerLogin';
 
 const Navigation = () => {
+    const handleDisplay = () => {
+        let bruger = document.querySelector(".modalBruger");
+        let butik = document.querySelector(".modalButik");
+        bruger.style.display = "none"
+        butik.style.display = "block"
+    }
     return (
         <div className="position-fixed w-100 zindex">
             <nav role="navigation" id="navigation" className="row position-relative">
@@ -41,7 +47,7 @@ const Navigation = () => {
                 </div>
             </nav>
             <div className="modal fade" id="BrugerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" role="document">
+                <div className="modal-dialog modalBruger" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">Bruger Login</h5>
@@ -53,27 +59,48 @@ const Navigation = () => {
                             <BrugerLogin />
                                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#ButikModal">
+                            <button onClick={handleDisplay} type="button" className="btn btn-primary" data-toggle="modal" data-target="#ButikModal">
                                 Butik Login
                             </button>                            <button type="button" className="btn btn-primary">Login Admin</button>
                         </div>
                     </div>
                 </div>
-                <div className="modal-dialog" role="document">
+                <div className="modal-dialog modalButik" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Bruger Login</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Butik Login</h5>
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div className="modal-body">
                             <BrugerLogin />
-                                        </div>
+                        </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#ButikModal">
-                                Butik Login
-                            </button>                            <button type="button" className="btn btn-primary">Login Admin</button>
+                                Bruger Login
+                            </button>    
+                            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#ButikModal">
+                                Admin Login
+                            </button>                         
+                        </div>
+                    </div>
+                </div>
+                <div className="modal-dialog modalButik" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Admin Login</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <BrugerLogin />
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#ButikModal">
+                                
+                            </button>                            
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ import "./Header.scss";
 const Header = () => {
     return (
         <div id="header">
-            <Navigation />
+            {/* <Navigation /> */}
             <div className="row">
               <div className="offset-3 col-6 bg-gray text-center text-light p-5">
                 <h1>Overskrift</h1>
