@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Axios from 'axios';
 
 const OpretKonto = () => {
+    
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -79,6 +80,7 @@ const OpretKonto = () => {
                 </Button>
                 
             </Form>
+
 
         </div>
     )

@@ -18,7 +18,7 @@ function App() {
       <Route path="/redigerbutik/:id" component={RedigerButik} />
       <Route path="/opretbruger" component={OpretBruger} />
       <Route path="/redigerbruger/:id" component={RedigerBruger} />
-      {/* <Route path="/login" component={BrugerLogin} /> */}
+      <Route path="/login" component={BrugerLogin} />
     </BrowserRouter>
   );
 }

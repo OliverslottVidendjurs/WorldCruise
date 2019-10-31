@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 
-// scss
+// scss 
 import "./Header.scss";
 const Header = () => {
     return (
@@ -9,8 +9,8 @@ const Header = () => {
             <Navigation />
             <div className="row">
               <div className="offset-3 col-6 bg-gray text-center text-light p-5">
-                <h1>Overskrift</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, obcaecati.</p>
+                <h1>World Cruise Inc.</h1>
+                <p>Let’s go on an adventure</p>
             </div>  
             </div>
             
@@ -18,4 +18,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
