@@ -28,10 +28,14 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-3 col-md-12" id="icons">
                     <h3>Følg os</h3>
+                    <div className="col-12">
                     <a href="facebook.com"><img src="" alt=""/><i class="fab fa-facebook"></i></a>
                     <a href="facebook.com"><img src="" alt=""/><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div className="col-12">
                     <a href="facebook.com"><img src="" alt=""/><i class="fab fa-twitter"></i></a>
                     <a href="facebook.com"><img src="" alt=""/><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
             <div className="row">
