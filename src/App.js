@@ -15,6 +15,7 @@ import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Kundeservice from './components/Kundeservice';
 import Posts from "./components/News/Posts";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/kundeservice" component={Kundeservice} />
       <Route path="/nyheder" component={Posts} />
+      <Route path="/firmaprofil" component={About} />
       <Route path="/tilmeldbutik" component={TilmeldButik} />
       <Route path="/redigerbutik/:id" component={RedigerButik} />
       <Route path="/opretbruger" component={OpretBruger} />

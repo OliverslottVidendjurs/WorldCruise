@@ -55,7 +55,7 @@ function Butikkersection () {
 
     return (
         <section className="Butikker-container">
-            <section className="container-fluid d-flex justify-content-center flex-wrap alleButikkerSection">
+            <section className="d-flex justify-content-center flex-wrap alleButikkerSection">
                 <Butik alleButikkerProps={Butikker} />
             </section>
 

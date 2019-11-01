@@ -33,7 +33,7 @@ const OpretKonto = () => {
     }
 
     return (
-        <div className="OpretKonto container pad text-dark">
+        <div className="OpretKonto container text-dark">
             <Form onSubmit={handleSubmit} className="OpretKontoForm">
                 <Form>
                     <Row>

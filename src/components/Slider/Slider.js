@@ -1,55 +1,52 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import img1 from './slider1.png';
-import img2 from './slider2.png';
-import img3 from './slider3.png';
-import '../Slider/slider.scss';
+import React, {useEffect, useState} from 'react';
+import './slider.scss';
+// import $ from "jquery";
 
+const Slider = () => {  
+  // useEffect(() => {
+  //   $('.slick-carousel').slick({
+  //     arrows: true,
+  //     rows: 2,
+  //     slidesPerRow: 3,
+  //     centerPadding: "0px",
+  //     dots: false,
+  //     slidesToShow: 4,
+  //     touchThreshold: 500,
+  //     infinite: false
+  //   });
+  // }, []);
+  // State
+  const [posts] = useState([
+    {img: 'copenhagen.jpg', title: 'Overskrift', resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', id: 1},
+    {img: 'copenhagen.jpg', title: 'Overskrift', resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', id: 2},
+    {img: 'copenhagen.jpg', title: 'Overskrift', resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', id: 3},
+    {img: 'copenhagen.jpg', title: 'Overskrift', resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', id: 4},
+    {img: 'copenhagen.jpg', title: 'Overskrift', resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', id: 5},
+    {img: 'copenhagen.jpg', title: 'Overskrift', resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', id: 6},
+  ]);
 
-const Slider = () => {
-    return (
-        <div className="container">
-
-        <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={img1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={img2}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={img3}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-            
+  const slideList = posts.map(p => 
+      <div>
+        <div className="slide-content">
+          <img src={`/img/${p.img}`} alt={p.title}/>
         </div>
+      </div>
     )
+  return (
+    <div className="slick-carousel">
+      {/* <div><div className="slide-content">1 your content</div></div>
+      <div><div className="slide-content">2 your content</div></div>
+      <div><div className="slide-content">3 your content</div></div>
+      <div><div className="slide-content">4 your content</div></div>
+      <div><div className="slide-content">5 your content</div></div>
+      <div><div className="slide-content">6 your content</div></div>
+      <div><div className="slide-content">7 your content</div></div>
+      <div><div className="slide-content">8 your content</div></div>
+      <div><div className="slide-content">9 your content</div></div>
+      <div><div className="slide-content">10 your content</div></div> */}
+      {slideList}
+    </div>
+  )
 }
 
 export default Slider;

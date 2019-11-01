@@ -5,7 +5,7 @@ import BrugerAdmin from './BrugerAdmin';
 
 const Bruger = () => {
     return (
-        <wrapper className="BrugerContainer float-left m-5">
+        <wrapper className="BrugerContainer m-5">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 pt-5">
