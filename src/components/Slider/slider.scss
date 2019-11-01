@@ -21,7 +21,7 @@ $gutters: 10%;
   .slick-next {
     position: absolute;
     right: $gutters;
-    background: #777;
+    background: rgba(119, 119, 119, 0);
     border: none;
     color: transparent;
     width: 30px;
@@ -30,7 +30,7 @@ $gutters: 10%;
     &:before { 
       content: ">"; 
       color: #fff; 
-      font-size: 25px;
+      font-size: 160px;
     }
   }
   

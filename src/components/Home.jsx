@@ -9,8 +9,8 @@ const Home = () => {
         <div>
             <Header />
             <Slider />
-            <Butikkersection />
             <GoogleMaps />
+            <Butikkersection />
         </div>
     )
 }
