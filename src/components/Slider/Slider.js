@@ -8,7 +8,7 @@ import '../Slider/slider.scss';
 
 const Slider = () => {
     return (
-        <div className="container">
+        <div className="container slider">
 
         <Carousel>
   <Carousel.Item>
